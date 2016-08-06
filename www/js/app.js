@@ -215,8 +215,8 @@ angular.module('simplyHome', ['ionic', 'simplyHome.controllers', 'simplyHome.ser
     abstract: true,
     views: {
       'tab-renter-enquiry': {
-        templateUrl: 'templates/tabs-renter/enquiry.html',
-        controller: 'EnquiryCtrl'
+        templateUrl: 'templates/tabs-renter/abstract.html',
+        controller: 'RenterEnquiryCtrl'
       }
     }
   })
@@ -236,7 +236,7 @@ angular.module('simplyHome', ['ionic', 'simplyHome.controllers', 'simplyHome.ser
     abstract: true,
     views: {
       'tab-renter-signup': {
-        templateUrl: 'templates/tabs-renter/enquiry.html',
+        templateUrl: 'templates/tabs-renter/abstract.html',
         controller: 'RenterAuthCtrl'
       }
     }
@@ -260,6 +260,16 @@ angular.module('simplyHome', ['ionic', 'simplyHome.controllers', 'simplyHome.ser
           }
         }
       })
+
+  .state('tab.renter-my-appointments', {
+    url: '/renter-myappointments',
+    views: {
+      'tab-renter-my-appointments': {
+        templateUrl: 'templates/tabs-renter/tab-my-appointments.html',
+        controller: 'RenterAppointmentsCtrl'
+      }
+    }
+  })
 
   .state('tab.renter-chats', {
     url: '/renter-chats',

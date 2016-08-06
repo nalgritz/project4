@@ -1,6 +1,6 @@
 angular.module('simplyHome.controllers')
 
-.controller('EnquiryCtrl', function($scope, $state, $http) {
+.controller('RenterEnquiryCtrl', function($scope, $state, $http) {
 
   $scope.bedroomsBtns = [
     { number: '1' },

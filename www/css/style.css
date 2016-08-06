@@ -45,6 +45,18 @@
   text-shadow: 1px 1px 2px #000;
 }
 
+.title {
+  padding: 0;
+}
+
+.tabform .item{
+  border-width: 0;
+}
+
+.tabform .item-radio input:checked + .radio-content .item-content{
+  background-color: white;
+}
+
 /* =======simplyHome icon font ===========*/
 @font-face {
     font-family: 'simplyhome';
