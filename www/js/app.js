@@ -231,15 +231,24 @@ angular.module('simplyHome', ['ionic', 'simplyHome.controllers', 'simplyHome.ser
     templateUrl: 'templates/tabs-renter/tab-enquiry-criteria.html'
   })
 
-//only show if not logged in
-  .state('tab.renter-signup', {
-    url: '/renter-signup',
+  .state('tab.renter-auth', {
+    url: '/renter-auth',
+    abstract: true,
     views: {
       'tab-renter-signup': {
-        templateUrl: 'templates/tabs-renter/tab-signup.html',
+        templateUrl: 'templates/tabs-renter/enquiry.html',
         controller: 'RenterAuthCtrl'
       }
     }
+  })
+
+  .state('tab.renter-auth.signup', {
+    url: '/signup',
+    templateUrl: 'templates/tabs-renter/tab-signup.html',
+  })
+  .state('tab.renter-auth.login', {
+    url: '/login',
+    templateUrl: 'templates/tabs-renter/login.html',
   })
 
   .state('tab.renter-my-enquiries', {
