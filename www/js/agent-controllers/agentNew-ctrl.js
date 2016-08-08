@@ -1,6 +1,6 @@
 angular.module('simplyHome.controllers')
 
-// New Listings controllers
+// AGENT New Listings controllers
 .controller('NewCtrl', ['Upload','$scope', "$state", "$http", function(Upload, $scope, $state, $http){
 
   $scope.files = ''

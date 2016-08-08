@@ -16,6 +16,7 @@ angular.module('simplyHome.controllers')
   $scope.showEnquiryDetails = function(enquiry){
     // $scope.enquiry = enquiry;
     currentEnquiry.setProperty(enquiry);
+    console.log(currentEnquiry.getProperty());
     $state.go('tab.agent-enquiry')
   }
   getMatchedEnquiries();
